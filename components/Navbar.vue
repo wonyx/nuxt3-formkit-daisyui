@@ -1,7 +1,7 @@
 <template>
-  <div class="navbar bg-base-100">
+  <div class="navbar">
     <div class="flex-1">
-      <a class="btn btn-ghost normal-case text-xl">Nuxt3-Formkit-DaisyUI</a>
+      <a class="normal-case text-xl">Nuxt3-Formkit-DaisyUI</a>
     </div>
     <ColorModeSwitch />
   </div>

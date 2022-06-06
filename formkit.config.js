@@ -11,7 +11,6 @@ const textClassification = {
    max-w-xs
    focus-within:input-info
    formkit-invalid:input-error
-   formkit-invalid:border-red-500
   `,
   label: 'font-bold text-sm formkit-invalid:text-red-500'
 }
@@ -22,9 +21,10 @@ const buttonClassification = {
 const theme = {
   // the global key will apply to all inputs
   global: {
-    help: 'text-xs text-gray-500',
-    message: '$reset text-error text-xs',
-    label: '$reset ml-2 label-text'
+    help: 'text-xs text-gray-500 m-1',
+    message: '$reset text-error text-xs m-1',
+    label: '$reset label-text m-1',
+    outer: '$reset my-2'
   },
   button: buttonClassification,
   date: textClassification,
@@ -32,7 +32,10 @@ const theme = {
   checkbox: {
     input: '$reset checkbox checkbox-accent',
     inner: '$reset inline',
-    wrapper: '$reset cursor-pointer label  justify-start'
+    label: '$reset ml-2 label-text',
+    legend: '$reset font-bold px-1',
+    fieldset: '$reset card card-bordered border-accent p-2',
+    wrapper: '$reset cursor-pointer flex items-center justify-start max-w-fit'
   },
   email: textClassification,
   month: textClassification,
@@ -41,7 +44,10 @@ const theme = {
   radio: {
     input: '$reset radio radio-accent',
     inner: '$reset inline',
-    wrapper: '$reset cursor-pointer label justify-start'
+    label: '$reset ml-2 label-text',
+    legend: '$reset font-bold px-1',
+    fieldset: '$reset card card-bordered border-accent p-2',
+    wrapper: '$reset cursor-pointer flex items-center justify-start max-w-fit'
   },
   range: {
     input: '$reset range range-secondary'

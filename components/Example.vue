@@ -25,8 +25,12 @@ const inputOptions = {
   />
 </template>
 
-<style scoped>
-.formkit-invalid:input-error {
+<style>
+/* WORKAROUND: manually add styles */
+[data-invalid] .formkit-invalid\:input-error {
   @apply input-error;
+}
+[data-invalid] .formkit-invalid\:text-red-500{
+  @apply text-red-500;
 }
 </style>

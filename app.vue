@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-2xl px-4 py-10 m-auto">
+  <div class="card shadow-xl max-w-2xl p-4 m-auto">
     <Navbar />
     <Example />
   </div>
