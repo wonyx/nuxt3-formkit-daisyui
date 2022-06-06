@@ -22,6 +22,8 @@ jobs:
           restore-keys: npm-
       - run: npm ci
       - run: npm run generate
+        env:
+          NUXT_APP_BASE_URL: /nuxt3-formkit-daisyui
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
