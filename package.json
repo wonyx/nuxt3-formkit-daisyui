@@ -17,6 +17,6 @@
     "@tailwindcss/typography": "^0.5.2",
     "daisyui": "^2.15.2",
     "eslint": "^8.17.0",
-    "nuxt": "3.0.0-rc.3"
+    "nuxt": "3.0.0-rc.4"
   }
 }
