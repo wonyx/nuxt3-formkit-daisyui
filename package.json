@@ -6,17 +6,18 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
-  "devDependencies": {
-    "@formkit/nuxt": "^1.0.0-beta.8",
-    "@formkit/tailwindcss": "^1.0.0-beta.8",
-    "@formkit/themes": "^1.0.0-beta.8",
-    "@iconify/vue": "^3.2.1",
+  "dependencies": {
+    "@formkit/nuxt": "^0.16.4",
+    "@formkit/tailwindcss": "^0.16.4",
+    "@formkit/themes": "^0.16.4",
+    "@iconify/vue": "^4.1.1",
     "@nuxtjs/color-mode": "^3.1.3",
-    "@nuxtjs/eslint-config-typescript": "^10.0.0",
-    "@nuxtjs/tailwindcss": "^5.1.2",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/tailwindcss": "^6.6.6",
     "@tailwindcss/typography": "^0.5.2",
     "daisyui": "^2.15.2",
     "eslint": "^8.17.0",
-    "nuxt": "3.0.0-rc.3"
+    "nuxt": "^3.4.1",
+    "@nuxt/kit": "^3.4.2"
   }
 }
