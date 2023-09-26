@@ -34,6 +34,7 @@ jobs:
         env:
           NUXT_APP_BASE_URL: /nuxt3-formkit-daisyui
   deploy:
+    needs: build
     runs-on: ubuntu-22.04
     steps:
       - name: Cache dist
