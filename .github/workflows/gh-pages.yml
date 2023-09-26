@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
@@ -20,26 +20,10 @@ jobs:
           path: ~/.npm
           key: npm-${{ hashFiles('package-lock.json') }}
           restore-keys: npm-
-      - name: Cache dist
-        uses: actions/cache@v3
-        with:
-          path: ./dist
-          key: dist-${{ github.sha }}
-          restore-keys: dist-
       - run: npm ci
       - run: npm run generate
         env:
           NUXT_APP_BASE_URL: /nuxt3-formkit-daisyui
-  deploy:
-    needs: build
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Cache dist
-        uses: actions/cache@v3
-        with:
-          path: ./dist
-          key: dist-${{ github.sha }}
-          restore-keys: dist-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
